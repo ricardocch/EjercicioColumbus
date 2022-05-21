@@ -16,4 +16,24 @@ const {
     });
 
   });
+
+  describe('Should return false', function() {
+    it('should´t accept strings', function() {
+      expect(getLinearArray("hola")).toBeFalsy();
+    });
+
+    it('should´t accept numbers', function() {
+      expect(getLinearArray(233)).toBeFalsy();
+    });
+
+    it('should´t accept object', function() {
+      expect(getLinearArray({a:123})).toBeFalsy();
+    });
+
+    it('should´t accept booleans', function() {
+      expect(getLinearArray(true)).toBeFalsy();
+      expect(getLinearArray(false)).toBeFalsy();
+    });
+
+  });
   
