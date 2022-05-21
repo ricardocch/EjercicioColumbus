@@ -2,9 +2,18 @@ const {
     getArray
   } = require('../index.js');
   
-  describe('test', function() {
-    it('should return 2', function() {
-      expect(2).toBe(2);
+  describe('Should return linear array', function() {
+    it('should return [1, 2, 3, 4, 5]', function() {
+      expect(getArray([1, [2, [3, [4, 5]]]])).toEqual([1, 2, 3, 4, 5]);
     });
+
+    it('should return [6, 1, 2, 3, 4, 5]', function() {
+      expect(getArray([1, [2, [3, [4, 5]]]])).toEqual([6, 1, 2, 3, 4, 5]);
+    });
+
+    it('should return [1, 2, 3, 4, 5]', function() {
+      expect(getArray([[[1, 2,], 3], 4, 5])).toEqual([1, 2, 3, 4, 5]);
+    });
+
   });
   
