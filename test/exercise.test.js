@@ -8,7 +8,7 @@ const {
     });
 
     it('should return [6, 1, 2, 3, 4, 5]', function() {
-      expect(getArray([1, [2, [3, [4, 5]]]])).toEqual([6, 1, 2, 3, 4, 5]);
+      expect(getArray([6, [1, [2, 3], 4], 5])).toEqual([6, 1, 2, 3, 4, 5]);
     });
 
     it('should return [1, 2, 3, 4, 5]', function() {
