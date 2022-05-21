@@ -1,6 +1,9 @@
 function getLinearArray(inputArray) {
 
   let outputArray = [];
+  if(!Array.isArray(inputArray))
+    return false;
+
   inputArray.forEach(element => {
     if(Array.isArray(element)){
         let newArray = getLinearArray(element)
