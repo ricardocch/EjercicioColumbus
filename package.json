@@ -4,6 +4,7 @@
       "description": "Ejercicio Columbus Ricardo Hernandez Perez",
       "main": "index.js",
       "scripts": {
+            "start": "node index.js",
             "test": "jest --collectCoverage=false exercise.test.js"
       },
       "devDependencies": {
