@@ -1,0 +1,18 @@
+{
+      "name": "challenge",
+      "version": "1.0.0",
+      "description": "Ejercicio Columbus Ricardo Hernandez Perez",
+      "main": "index.js",
+      "scripts": {
+            "test": "jest --collectCoverage=false exercise.test.js"
+      },
+      "devDependencies": {
+            "eslint": "^4.13.1",
+            "jest": "^22.0.3"
+      },
+      "author": "",
+      "license": "ISC",
+      "jest": {
+            "testURL": "http://localhost/"
+      }
+}
